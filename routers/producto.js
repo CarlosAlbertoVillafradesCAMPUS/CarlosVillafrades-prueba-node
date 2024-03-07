@@ -1,9 +1,8 @@
 import { Router } from "express";
-import { productoController } from "../controllers/producto.js";
+import { categoriaController } from "../controllers/categoria.js";
 
-const appProducto = Router()
+const appCategoria = Router()
 
-appProducto.get("/productos", productoController.getProducts)
-appProducto.get("/productos/mas-vendidos", productoController.getProductsVendidos)
+appCategoria.get("/categorias", categoriaController.getCategoria)
 
-export default appProducto
+export default appCategoria;

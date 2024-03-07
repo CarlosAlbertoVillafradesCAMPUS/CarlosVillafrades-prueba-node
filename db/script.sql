@@ -52,6 +52,8 @@ CREATE TABLE `categorias` (
   `adultos` tinyint UNSIGNED NOT NULL DEFAULT '0' COMMENT '0=No 1=Si... Categoría para mayores de edad'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Son las posibles Categorías para aplicar a un Producto de una Tienda, se manejan como un Pasillo';
 
+/*   INSERT INTO categorias(nombre) VALUES("PANTALONES");
+ */ 
 -- --------------------------------------------------------
 
 --
@@ -1150,6 +1152,8 @@ CREATE TABLE `productos_categorias` (
   `id_producto` int UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Son las Categorías o Pasillos asociados a un Producto';
 
+/*  INSERT INTO productos_categorias(id_categoria, id_producto) VALUES(205, 3);
+ */  
 -- --------------------------------------------------------
 
 --

@@ -32,6 +32,7 @@ export class productoController{
                         attributes:[],
                     },
                     attributes:[["id", "idProducto"], "nombre", "presentacion", [sequelize.literal(`(SELECT SUM(cantidad) FROM pedidos_productos WHERE id_producto = productos.id AND id_pedido = pedidos.id)`), 'unidadesVendidas']],
+                    order:[[sequelize.literal("unidadesVendidas"), 'DESC']],
                    limit:10
                     //order:[['unidadesVendidas', 'ASC']]
              }
