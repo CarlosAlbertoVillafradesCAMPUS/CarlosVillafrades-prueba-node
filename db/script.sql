@@ -108,6 +108,10 @@ CREATE TABLE `pedidos_productos` (
   `id_pedido` mediumint UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Son los Productos asociados a un Pedido';
 
+
+/* INSERT INTO pedidos_productos(cantidad, valor_unitario, valor_unitario_promocion, total_teorico, total_final, id_promocion, id_producto, id_pedido) VALUES(30, 20, 10, 20, 50, 1, 1, 1); */
+
+
 -- --------------------------------------------------------
 
 --
@@ -1160,8 +1164,7 @@ CREATE TABLE `productos_stocks` (
   `fecha_ingreso` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Es el Historial de Stock disponible de un Producto';
 
-/* INSERT INTO productos_stocks(cantidad, id_tienda, id_producto, fecha_ingreso) VALUES(30, 2, 1, "2024-03-01");
- */
+ 
 -- --------------------------------------------------------
 
 --
